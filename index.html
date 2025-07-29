@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULLIX - Genetically Engineered Robo-Bull Token</title>
+    <meta name="description" content="BULLIX is a genetically engineered robo-bull designed to moon charts and melt CPUs. Half silicon, fully moo-tated AI using bull farts to pay gas fee.">
+    <meta name="keywords" content="BULLIX, meme token, crypto, Solana, robo-bull, DeFi">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BULLIX</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#tokenomics" class="nav-link">Tokenomics</a>
+                <a href="#chart" class="nav-link">Chart</a>
+                <a href="#community" class="nav-link">Community</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="glitch" data-text="BULLIX">BULLIX</span>
+                    </h1>
+                    <p class="hero-subtitle">Genetically Engineered Robo-Bull</p>
+                    <p class="hero-description">
+                        Designed to moon charts and melt CPUs.<br>
+                        Half silicon. Fully moo-tated AI using bull farts to pay gas fee.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#chart" class="cta-button primary">
+                            <i class="fas fa-chart-line"></i>
+                            View Chart
+                        </a>
+                        <a href="https://bullixtech.io" target="_blank" class="cta-button secondary">
+                            <i class="fas fa-globe"></i>
+                            Official Site
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://t.me/bullixtech" target="_blank" class="hero-social-btn telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://x.com/bullixtech" target="_blank" class="hero-social-btn twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="https://bullixtech.io" target="_blank" class="hero-social-btn website">
+                            <i class="fas fa-globe"></i>
+                            <span>Website</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="logo-container">
+                        <img src="bullix-logo.png" alt="BULLIX - Genetically Engineered Robo-Bull" class="hero-logo" id="heroLogo">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner Section -->
+    <section class="banner-section">
+        <div class="banner-container">
+            <img src="bullix-banner.jpg" alt="BULLIX Banner with Matrix Background" class="banner-image">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About BULLIX</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Genetically Engineered</h3>
+                    <p>A revolutionary robo-bull created through advanced genetic engineering and AI technology.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Chart Mooner</h3>
+                    <p>Specifically designed to moon charts and bring explosive growth to the crypto space.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>CPU Melter</h3>
+                    <p>Half silicon technology that pushes computational limits to the extreme.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Gas Efficient</h3>
+                    <p>Innovative bull fart technology for eco-friendly and cost-effective gas fees.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <h2 class="section-title">Tokenomics</h2>
+            <div class="token-info">
+                <div class="token-card">
+                    <h3>Contract Address</h3>
+                    <div class="contract-address">
+                        <span id="contractAddress">2T8rrSRmbnSUdaTESK8A66u6SJjMehxz7Qmc3Dtk4VGJ</span>
+                        <button class="copy-btn" id="copyBtn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="copy-feedback" id="copyFeedback">Copied to clipboard!</div>
+                </div>
+                <div class="token-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Network</span>
+                        <span class="stat-value">Solana</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Symbol</span>
+                        <span class="stat-value">BULLIX</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Type</span>
+                        <span class="stat-value">Meme Token</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart Section -->
+    <section id="chart" class="chart-section">
+        <div class="container">
+            <h2 class="section-title">Live Chart</h2>
+            <div class="chart-container">
+                <iframe 
+                    src="https://dexscreener.com/solana/2T8rrSRmbnSUdaTESK8A66u6SJjMehxz7Qmc3Dtk4VGJ?embed=1&theme=dark&trades=0&info=0"
+                    class="chart-iframe"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="chart-links">
+                <a href="https://dexscreener.com/solana/2T8rrSRmbnSUdaTESK8A66u6SJjMehxz7Qmc3Dtk4VGJ" target="_blank" class="chart-link">
+                    <i class="fas fa-external-link-alt"></i>
+                    Open Full Chart
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Join the BULLIX Community</h2>
+            <div class="social-links">
+                <a href="https://t.me/bullixtech" target="_blank" class="social-link telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                    <span>Telegram</span>
+                </a>
+                <a href="https://x.com/bullixtech" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://bullixtech.io" target="_blank" class="social-link website">
+                    <i class="fas fa-globe"></i>
+                    <span>Website</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">BULLIX</span>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 BULLIX. All rights reserved.</p>
+                    <p>Half silicon. Fully moo-tated AI.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab" id="fab">
+        <i class="fas fa-rocket"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
